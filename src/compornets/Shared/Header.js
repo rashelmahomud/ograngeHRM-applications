@@ -11,7 +11,7 @@ const Header = () => {
 
   const logout = () => {
     signOut(auth);
-};
+  };
 
   const navbermenu = <>
     <li><Link to="/">Home</Link></li>
@@ -19,11 +19,7 @@ const Header = () => {
     <li><Link to="/blogs">Blogs</Link></li>
     <li><Link to="/contact">Contact</Link></li>
 
-
-    {/* <li>{user ? <Link to="/dashboard">Dashboard</Link> : ""}</li>
-  <li>{user ? <Link to="/admin">Admin</Link> : ""}</li> */}
-
-
+    <li>{user ? <Link to="/admin">Admin</Link> : ""}</li>
 
   </>
 
@@ -47,30 +43,30 @@ const Header = () => {
             {navbermenu}
           </ul>
         </div>
-        
 
-          {user ? (<div className="navbar-end">
-            <div className="dropdown dropdown-end">
-              <label tabindex="0" className="btn btn-ghost btn-circle avatar">
-                <div className="w-10 rounded-full">
-                  <img src={user.photoURL} />
 
-                </div>
-              </label>
-              <ul tabindex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
-                  </a>
-                </li>
-                <p>{user.displayName}</p>
-                <li><a>Settings</a></li>
-                <button onClick={logout} className="btn btn-active btn-ghost">Sign Out</button>
-              </ul>
-            </div>
-          </div>) : (<button className="btn btn-outline btn-accent"><Link to="/login">login</Link></button>)}
-        
+        {user ? (<div className="navbar-end">
+          <div className="dropdown dropdown-end">
+            <label tabindex="0" className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src={user.photoURL} />
+
+              </div>
+            </label>
+            <ul tabindex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a className="justify-between">
+                  Profile
+                  <span className="badge">New</span>
+                </a>
+              </li>
+              <p>{user.displayName}</p>
+              <li><a>Settings</a></li>
+              <button onClick={logout} className="btn btn-active btn-ghost">Sign Out</button>
+            </ul>
+          </div>
+        </div>) : (<button className="btn btn-outline btn-accent"><Link to="/login">login</Link></button>)}
+
       </div>
     </div>
 

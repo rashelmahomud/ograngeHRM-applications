@@ -6,6 +6,8 @@ import Login from "./compornets/Shared/Login";
 import About from "./compornets/Home/About";
 import Blogs from "./compornets/Home/Blogs";
 import Contact from "./compornets/Home/Contact";
+import Admin from "./compornets/Admin/Admin";
+import User from "./compornets/Admin/User";
 
 function App() {
   return (
@@ -19,6 +21,16 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+
+        <Route path='/admin' element={
+
+          <Admin></Admin>
+
+        }>
+          <Route index element={<User></User>}></Route>
+
+        </Route>
+
       </Routes>
     </div>
   );
