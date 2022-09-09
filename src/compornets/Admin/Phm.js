@@ -14,7 +14,7 @@ const Phm = () => {
                         </div>
                     </div>
                     
-                    <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 ">
+                    <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 font-bold text-gray-500 ">
                         <li><Link to="/professionDetails">Profession Detail</Link></li>
                         <li><Link to="/contactDetails">Contact Detail</Link></li>
                         <li><Link to="/EmerryGencyContact">Emergency Contact</Link></li>
@@ -30,7 +30,7 @@ const Phm = () => {
             </div>
 
             {/* right site  */}
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card bg-base-100 shadow-xl">
                 <div class="card-body">
                     {/* <h1 className='font-bold text-gray-400 mb-2'>Profession Details</h1>
                     <div class="avatar items-center justify-center">
