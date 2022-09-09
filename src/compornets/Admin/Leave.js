@@ -3,7 +3,7 @@ import React from 'react';
 const Leave = () => {
     return (
         <div>
-            <h1>hello Leave..</h1>
+            <h1 className='text-center font-bold text-3xl my-10'>Hello Commiing Leave..</h1>
         </div>
     );
 };
