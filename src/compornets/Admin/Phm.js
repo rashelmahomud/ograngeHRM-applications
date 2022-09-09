@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ProfessionDetails from './Pim/ProfessionDetails';
 
 const Phm = () => {
     return (
-        <div>
+        <div className='flex'>
             <div class="card w-96 bg-base-100 shadow-xl">
                 <div class="card-body">
                     <h1 className='font-bold text-gray-400 text-center mb-2'>ChaHal <br /> Vadalmiya</h1>
@@ -27,6 +28,21 @@ const Phm = () => {
 
                 </div>
             </div>
+
+            {/* right site  */}
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                    {/* <h1 className='font-bold text-gray-400 mb-2'>Profession Details</h1>
+                    <div class="avatar items-center justify-center">
+                       <h1>hello</h1>
+                    </div> */}
+                    
+                    <ProfessionDetails></ProfessionDetails>
+
+                </div>
+            </div>
+
+
         </div>
     );
 };

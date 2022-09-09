@@ -13,8 +13,10 @@ import Leave from './compornets/Admin/Leave';
 import Myinfo from './compornets/Admin/Myinfo';
 import Time from './compornets/Admin/Time';
 import Dashboard from './compornets/Admin/Dashboard'
+import Pim from './compornets/Admin/Pim/pim'
 import Footer from "./compornets/Shared/Footer";
 import NoteFound from "./compornets/NoteFound";
+import ProfessionDetails from "./compornets/Admin/Pim/ProfessionDetails";
 
 function App() {
   return (
@@ -42,6 +44,19 @@ function App() {
           <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
 
         </Route>
+
+        <Route path='/pim' element={
+
+          <Pim></Pim>
+
+        }>
+          <Route index element={<ProfessionDetails></ProfessionDetails>}></Route>
+          <Route path='phm' element={<Phm></Phm>}></Route>
+          <Route path='leave' element={<Leave></Leave>}></Route>
+
+        </Route>
+
+
 
         <Route path="*" element={<NoteFound></NoteFound>}></Route>
 
