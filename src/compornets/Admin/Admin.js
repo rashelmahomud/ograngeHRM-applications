@@ -5,7 +5,7 @@ const Admin = () => {
     return (
         <div className="drawer drawer-mobile">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex flex-col items-center justify-center">
+            <div className="drawer-content flex flex-col">
                 <Outlet></Outlet>
 
             </div>
@@ -14,7 +14,7 @@ const Admin = () => {
                 <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                     
                     <li><Link to="/admin"><i class="fa-solid fa-user-gear"></i>User</Link></li>
-                    <li><Link to="/admin/phm"><i class="fa-sharp fa-solid fa-users"></i>PHM</Link></li>
+                    <li><Link to="/admin/phm"><i class="fa-sharp fa-solid fa-users"></i>PIM</Link></li>
                     <li><Link to="/admin/leave"><i class="fa-solid fa-briefcase"></i>Leave</Link></li>
                     <li><Link to="/admin/time"><i class="fa-regular fa-clock"></i>Time</Link></li>
                     <li><Link to="/admin/myinfo"><i class="fa-solid fa-user-tie"></i>My Info</Link></li>
