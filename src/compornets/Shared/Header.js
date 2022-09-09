@@ -13,6 +13,9 @@ const Header = () => {
     signOut(auth);
   };
 
+  if(loading){
+    return <loading></loading>
+  }
   const navbermenu = <>
     <li><Link to="/">Home</Link></li>
     <li><Link to="/about">About</Link></li>
@@ -25,7 +28,7 @@ const Header = () => {
 
 
   return (
-    <div className=''>
+    <div className='z-40'>
       <div className="navbar bg-base-300 bg-opacity-30 backdrop-filter backdrop-blur-lg">
         <div className="navbar-start">
           <div className="dropdown">
@@ -48,7 +51,7 @@ const Header = () => {
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
 
-        {user ? (<div className="navbar-end">
+        {user ? (<div className="navbar-end z-auto">
           <div className="dropdown dropdown-end">
             <label tabindex="0" className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
