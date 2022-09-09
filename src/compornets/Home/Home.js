@@ -1,9 +1,11 @@
 import React from 'react';
+import CourseSlide from '../Home/Bannar/CourseSlide'
 
 const Home = () => {
     return (
         <div>
-            <h1>hello home</h1>
+            <CourseSlide></CourseSlide>
+
         </div>
     );
 };

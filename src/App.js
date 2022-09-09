@@ -13,6 +13,7 @@ import Leave from './compornets/Admin/Leave';
 import Myinfo from './compornets/Admin/Myinfo';
 import Time from './compornets/Admin/Time';
 import Dashboard from './compornets/Admin/Dashboard'
+import Footer from "./compornets/Shared/Footer";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         </Route>
 
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
