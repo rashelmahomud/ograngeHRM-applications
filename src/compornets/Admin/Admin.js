@@ -14,11 +14,11 @@ const Admin = () => {
                 <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                     
                     <li><Link to="/admin"><i class="fa-solid fa-user-gear"></i>User</Link></li>
-                    <li><Link to="/phm"><i class="fa-sharp fa-solid fa-users"></i>PHM</Link></li>
-                    <li><Link to="/leave"><i class="fa-solid fa-briefcase"></i>Leave</Link></li>
-                    <li><Link to="/time"><i class="fa-regular fa-clock"></i>Time</Link></li>
-                    <li><Link to="/myinfo"><i class="fa-solid fa-user-tie"></i>My Info</Link></li>
-                    <li><Link to="/dashboard"><i class="fa-solid fa-house-user"></i>Dashboard</Link></li>
+                    <li><Link to="/admin/phm"><i class="fa-sharp fa-solid fa-users"></i>PHM</Link></li>
+                    <li><Link to="/admin/leave"><i class="fa-solid fa-briefcase"></i>Leave</Link></li>
+                    <li><Link to="/admin/time"><i class="fa-regular fa-clock"></i>Time</Link></li>
+                    <li><Link to="/admin/myinfo"><i class="fa-solid fa-user-tie"></i>My Info</Link></li>
+                    <li><Link to="/admin/dashboard"><i class="fa-solid fa-house-user"></i>Dashboard</Link></li>
                     
                 </ul>
 

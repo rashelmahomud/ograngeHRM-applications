@@ -8,6 +8,11 @@ import Blogs from "./compornets/Home/Blogs";
 import Contact from "./compornets/Home/Contact";
 import Admin from "./compornets/Admin/Admin";
 import User from "./compornets/Admin/User";
+import Phm from './compornets/Admin/Phm';
+import Leave from './compornets/Admin/Leave';
+import Myinfo from './compornets/Admin/Myinfo';
+import Time from './compornets/Admin/Time';
+import Dashboard from './compornets/Admin/Dashboard'
 
 function App() {
   return (
@@ -28,6 +33,11 @@ function App() {
 
         }>
           <Route index element={<User></User>}></Route>
+          <Route path='phm' element={<Phm></Phm>}></Route>
+          <Route path='leave' element={<Leave></Leave>}></Route>
+          <Route path='myinfo' element={<Myinfo></Myinfo>}></Route>
+          <Route path='time' element={<Time></Time>}></Route>
+          <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
 
         </Route>
 
