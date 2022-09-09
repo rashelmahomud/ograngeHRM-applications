@@ -14,11 +14,11 @@ const Phm = () => {
     return (
         <div>
             <div className='grid grid-rows-3 grid-flow-col gap-4'>
-                <div class="card w-96 bg-base-100 shadow-xl lg:row-span-3">
-                    <div class="card-body">
+                <div className="card w-96 bg-base-100 shadow-xl lg:row-span-3">
+                    <div className="card-body">
                         <h1 className='font-bold text-gray-400 text-center mb-2'>ChaHal <br /> Vadalmiya</h1>
-                        <div class="avatar items-center justify-center">
-                            <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                        <div className="avatar items-center justify-center">
+                            <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                 <img src={user.photoURL} />
                             </div>
                         </div>
@@ -39,8 +39,8 @@ const Phm = () => {
                 </div>
 
                 {/* right site  */}
-                <div class="card bg-base-100 shadow-xl lg:col-span-2 z-0">
-                    <div class="card-body">
+                <div className="card bg-base-100 shadow-xl lg:col-span-2 z-0">
+                    <div className="card-body">
                         <ProfessionDetails></ProfessionDetails>
 
                     </div>

@@ -13,12 +13,12 @@ const Admin = () => {
                 <label for="my-drawer-2" className="drawer-overlay"></label>
                 <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
                     
-                    <li><Link to="/admin"><i class="fa-solid fa-user-gear"></i>User</Link></li>
-                    <li><Link to="/admin/phm"><i class="fa-sharp fa-solid fa-users"></i>PIM</Link></li>
-                    <li><Link to="/admin/leave"><i class="fa-solid fa-briefcase"></i>Leave</Link></li>
-                    <li><Link to="/admin/time"><i class="fa-regular fa-clock"></i>Time</Link></li>
-                    <li><Link to="/admin/myinfo"><i class="fa-solid fa-user-tie"></i>My Info</Link></li>
-                    <li><Link to="/admin/dashboard"><i class="fa-solid fa-house-user"></i>Dashboard</Link></li>
+                    <li><Link to="/admin"><i className="fa-solid fa-user-gear"></i>User</Link></li>
+                    <li><Link to="/admin/phm"><i className="fa-sharp fa-solid fa-users"></i>PIM</Link></li>
+                    <li><Link to="/admin/leave"><i className="fa-solid fa-briefcase"></i>Leave</Link></li>
+                    <li><Link to="/admin/time"><i className="fa-regular fa-clock"></i>Time</Link></li>
+                    <li><Link to="/admin/myinfo"><i className="fa-solid fa-user-tie"></i>My Info</Link></li>
+                    <li><Link to="/admin/dashboard"><i className="fa-solid fa-house-user"></i>Dashboard</Link></li>
                     
                 </ul>
 
