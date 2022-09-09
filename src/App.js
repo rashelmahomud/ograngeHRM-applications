@@ -17,12 +17,25 @@ import Pim from './compornets/Admin/Pim/pim'
 import Footer from "./compornets/Shared/Footer";
 import NoteFound from "./compornets/NoteFound";
 import ProfessionDetails from "./compornets/Admin/Pim/ProfessionDetails";
+import { useEffect, useState } from "react";
 
 function App() {
-  return (
-    <div>
+  const [theme, setTheme] = useState(false);
 
-      <Header></Header>
+
+
+  useEffect(() => {
+    setTheme(JSON.parse(window.localStorage.getItem("theme")));
+  }, []);
+
+  const handleThemeChange = () => {
+    setTheme(!theme);
+    window.localStorage.setItem("theme", !theme);
+  };
+  return (
+    <div data-theme={theme && "my_dark"}>
+
+      <Header handleThemeChange={handleThemeChange} theme={theme}></Header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
