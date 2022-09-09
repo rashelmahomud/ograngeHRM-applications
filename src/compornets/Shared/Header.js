@@ -25,7 +25,7 @@ const Header = () => {
 
 
   return (
-    <div>
+    <div className=''>
       <div className="navbar bg-base-300 bg-opacity-30 backdrop-filter backdrop-blur-lg">
         <div className="navbar-start">
           <div className="dropdown">

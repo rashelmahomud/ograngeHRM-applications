@@ -14,6 +14,7 @@ import Myinfo from './compornets/Admin/Myinfo';
 import Time from './compornets/Admin/Time';
 import Dashboard from './compornets/Admin/Dashboard'
 import Footer from "./compornets/Shared/Footer";
+import NoteFound from "./compornets/NoteFound";
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
           <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
 
         </Route>
+
+        <Route path="*" element={<NoteFound></NoteFound>}></Route>
 
       </Routes>
       <Footer></Footer>
