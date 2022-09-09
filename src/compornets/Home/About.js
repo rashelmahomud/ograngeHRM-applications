@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = () => {
+const About = ( {x} ) => {
     return (
         <div>
             <h1>Commint soon....</h1>
