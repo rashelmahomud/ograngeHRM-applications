@@ -44,21 +44,20 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
 
-        <Route path='/admin' element={
 
+        <Route path='/admin' element={
           <Admin></Admin>
 
         }>
           <Route index element={<User></User>}></Route>
-          <Route path='phm' element={<Phm></Phm>}></Route>
-          <Route path='leave' element={<Leave></Leave>}></Route>
-          <Route path='myinfo' element={<Myinfo></Myinfo>}></Route>
-          <Route path='time' element={<Time></Time>}></Route>
-          <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
-
+          <Route path='/admin/phm' element={<Phm></Phm>}></Route>
+          <Route path='/admin/leave' element={<Leave></Leave>}></Route>
+          <Route path='/admin/myinfo' element={<Myinfo></Myinfo>}></Route>
+          <Route path='/admin/time' element={<Time></Time>}></Route>
+          <Route path='/admin/dashboard' element={<Dashboard></Dashboard>}></Route>
         </Route>
 
-        <Route path='/pim' element={
+        {/* <Route path='/pim' element={
 
           <Pim></Pim>
 
@@ -67,7 +66,7 @@ function App() {
           <Route path='phm' element={<Phm></Phm>}></Route>
           <Route path='leave' element={<Leave></Leave>}></Route>
 
-        </Route>
+        </Route> */}
 
 
 
